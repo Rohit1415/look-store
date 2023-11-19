@@ -9,46 +9,24 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { InputAdornment, TextField } from '@mui/material';
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+// import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import SearchIcon from '@mui/icons-material/Search';
-import 
-const pages = [
-  {
-    title: 'Home',
-    path: '/home',
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
-  {
-    title: 'About',
-    path: '/about',
-  },
-  {
-    title: 'Profile',
-    path: '/signup',
-  },
-];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+const pages = [
+  { title: 'Home', path: '/home' },
+  { title: 'Contact', path: '/contact' },
+  { title: 'About', path: '/about' },
+  { title: 'Profile', path: '/signup' },
+];
 const Appbar = () =>  {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -96,9 +74,10 @@ const Appbar = () =>  {
               }}
             />
           </Box>
-         
         </Toolbar>
     </AppBar>
+
+
   );
 }
 export default Appbar;

@@ -10,6 +10,7 @@ const firebaseConfig = {
   projectId: "exclusive-store-1",
   storageBucket: "exclusive-store-1.appspot.com",
   messagingSenderId: "1069571557082",
+  databaseURL: 'https://exclusive-store-1-default-rtdb.firebaseio.com',
   appId: "1:1069571557082:web:a1ce3b887e7e893c6287e3"
 };
 
