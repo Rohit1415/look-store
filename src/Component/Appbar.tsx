@@ -8,9 +8,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { InputAdornment, TextField } from '@mui/material';
-// import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 
 const pages = [
   { title: 'Home', path: '/home' },
@@ -61,19 +59,18 @@ const Appbar = () =>  {
                 </Button> ))
             }
           </Box>
-          <Box>
-            <TextField
-              placeholder='What are you looking for?'
-              variant="outlined"
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <SearchIcon />
-                  </InputAdornment>
-                ),
-              }}
-            />
-          </Box>
+            <Box>
+              <ShoppingBagOutlinedIcon sx={{
+                fontSize : { 
+                  xs: 35,
+                  sm: 35,
+                  md: 40,
+                  lg: 45,
+                  xl: 50
+                },
+                cursor: 'pointer'
+              }}  />
+            </Box>
         </Toolbar>
     </AppBar>
 

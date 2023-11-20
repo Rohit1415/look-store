@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Appbar from "./Component/Appbar";
 import { Box } from "@mui/material";
+import Footer from "./Component/Footer/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Box>
   );
